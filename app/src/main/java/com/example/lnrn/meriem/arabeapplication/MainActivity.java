@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public Button startapp;
     private EditText nomtxt;
     public static String nom;
+
     public void init(){
         nomtxt=(EditText)findViewById(R.id.nom);
         startapp=(Button)findViewById(R.id.startapp);
