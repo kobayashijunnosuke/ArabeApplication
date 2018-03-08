@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lnrn.meriem.arabeapplication.Secondchoices"
+    android:background="@drawable/bg"
+    android:id="@+id/choix">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="-25dp"
+                android:padding="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/btn1"
+                android:id="@+id/ch1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="0dp"
+                android:padding="0dp"
+                android:layout_gravity="center"
+                android:src="@drawable/btn2"
+                android:id="@+id/ch2" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

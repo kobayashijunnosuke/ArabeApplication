@@ -1,0 +1,477 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lnrn.meriem.arabeapplication.act.act_obj10"
+    android:background="@drawable/bg">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginRight="15dp"
+                    android:text="الوعي الصوتي > التجزيء المقطعي"
+                    android:textColor="#c9c8c8" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <!--LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:background="@drawable/consigne"
+               android:id="@+id/textView3"-->
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/consigne"
+                        android:gravity="start"
+                        android:padding="40dp"
+                        android:text="- أُقَطِّعُ الْكَلِمَة. \n- أُعَيِّنُ الْمَقَاطِعَ الْمُكَوِّنَةَ لَهَا.\n\nأَََقُومُ بِسَحْبِ المَقَاطِعِِ المُنَاسِبَةِ وَوَضْعِهَا فِي المُرَبَّعِ أَسْفَلَ الكَلِمَةِ"
+                        android:textAlignment="textStart"
+                        android:textSize="18sp" />
+                    <!--/LinearLayout-->
+
+                    <FrameLayout
+                        android:id="@+id/quest1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="11dp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/mots1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:padding="10dp"
+                                android:text="سَفِينَةٌ"
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/target1"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:layout_alignBottom="@+id/mots1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/bg_border_circle"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold"  />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/quest1"
+                        android:gravity="center"
+                        android:layout_marginTop="125dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/linearLayout"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="54dp"
+                                android:layout_marginStart="54dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+                                    <TextView
+                                        android:id="@+id/rim1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="سَ"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                    <TextView
+                                        android:id="@+id/rim2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="20dp"
+                                        android:text="عَ"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                    <TextView
+                                        android:id="@+id/rim3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="زٌ"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+                                    <TextView
+                                        android:id="@+id/rim4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="نَ"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                    <TextView
+                                        android:id="@+id/rim5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ئـِ"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                    <TextView
+                                        android:id="@+id/rim6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="صَ"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+                                    <TextView
+                                        android:id="@+id/rim7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="فِي"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                    <TextView
+                                        android:id="@+id/rim8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="لـَ"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                    <TextView
+                                        android:id="@+id/rim9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="دِيـ"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+                                    <TextView
+                                        android:id="@+id/rim10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="فَا"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                    <TextView
+                                        android:id="@+id/rim11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="مٌ"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                    <TextView
+                                        android:id="@+id/rim12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ةٌ"
+                                        android:layout_marginRight="20dp"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center"
+                                    android:padding="5dp">
+                                    <TextView
+                                        android:id="@+id/rim13"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="قٌ"
+                                        android:textColor="#fff"
+                                        android:textSize="25sp"/>
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+
+                            <Button
+                                android:id="@+id/setfl"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_menu_send"
+                                android:gravity="center"
+                                android:shadowColor="@color/colorPrimary"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/linearLayout"
+                                android:layout_toEndOf="@+id/linearLayout" />
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:id="@+id/quest2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="11dp"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/mots2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:padding="10dp"
+                                android:text="صَدِيقٌ"
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/target2"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:layout_alignBottom="@+id/mots2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/bg_border_circle"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold"  />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/quest3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="11dp"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/mots3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:padding="10dp"
+                                android:text="عَلَمُ"
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/target3"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:layout_alignBottom="@+id/mots3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/bg_border_circle"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold"  />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/quest4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="11dp"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/mots4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:padding="10dp"
+                                android:text="فَائِزٌ"
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/target4"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:layout_alignBottom="@+id/mots4"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/bg_border_circle"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold"  />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--menu-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:theme="?attr/actionBarTheme"
+            tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="8dp">
+            <Button
+                android:layout_width="120dp"
+                android:id="@+id/prev"
+                android:layout_height="match_parent"
+                android:background="@drawable/prev"
+                android:layout_gravity="start"/>
+            <Button
+                android:layout_width="50dp"
+                android:id="@+id/menu"
+                android:layout_height="40dp"
+                android:background="@drawable/list"
+                android:layout_gravity="center"/>
+            <!--Button
+                android:layout_width="120dp"
+                android:id="@+id/next"
+                android:layout_height="match_parent"
+                android:background="@drawable/next"
+                android:layout_gravity="end"/-->
+
+        </android.support.design.widget.BottomNavigationView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

@@ -1,0 +1,397 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lnrn.meriem.arabeapplication.act.act2_obj3"
+    android:background="@drawable/bg">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginRight="15dp"
+                    android:text="الوعي الصوتي > العزل  > النشاط 2"
+                    android:textColor="#c9c8c8" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/consigne"
+                        android:gravity="start"
+                        android:lineSpacingExtra="10dp"
+                        android:padding="40dp"
+                        android:text="-أَقْرَأُ الْكَلِمَات.\n-أُحَدِّدُ مَكَانَ الصَّامِتِ فِي الْكَلِمَة"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
+                    <!--/LinearLayout-->
+
+                    <FrameLayout
+                        android:id="@+id/quest1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="11dp"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/mots1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp"
+                                android:text="صُوفٌ"
+                                android:textAlignment="center"
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_alignBaseline="@+id/cons1"
+                                android:layout_alignBottom="@+id/cons1"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="34dp"
+                                android:layout_marginEnd="34dp" />
+
+                            <TextView
+                                android:id="@+id/cons1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_border_circle"
+                                android:text="ص"
+                                android:textColor="#fff"
+                                android:textSize="40sp"
+                                android:layout_marginRight="34dp"
+                                android:layout_marginEnd="34dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toLeftOf="@+id/mots1"
+                                android:layout_toStartOf="@+id/mots1"
+                                android:layout_marginTop="14dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/quest2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="11dp"
+                        android:visibility="invisible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/mots2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp"
+                                android:text="أَنْفٌ"
+                                android:textAlignment="center"
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_alignBaseline="@+id/cons2"
+                                android:layout_alignBottom="@+id/cons2"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="34dp"
+                                android:layout_marginEnd="34dp" />
+
+                            <TextView
+                                android:id="@+id/cons2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_border_circle"
+                                android:text="ف"
+                                android:textColor="#fff"
+                                android:textSize="40sp"
+                                android:layout_marginRight="34dp"
+                                android:layout_marginEnd="34dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toLeftOf="@+id/mots2"
+                                android:layout_toStartOf="@+id/mots2"
+                                android:layout_marginTop="14dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/quest3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="11dp"
+                        android:visibility="invisible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/mots3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp"
+                                android:text="بَلَدٌ"
+                                android:textAlignment="center"
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_alignBaseline="@+id/cons3"
+                                android:layout_alignBottom="@+id/cons3"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="34dp"
+                                android:layout_marginEnd="34dp" />
+
+                            <TextView
+                                android:id="@+id/cons3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_border_circle"
+                                android:text="ل"
+                                android:textColor="#fff"
+                                android:textSize="40sp"
+                                android:layout_marginRight="34dp"
+                                android:layout_marginEnd="34dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toLeftOf="@+id/mots3"
+                                android:layout_toStartOf="@+id/mots3"
+                                android:layout_marginTop="14dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/quest4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="11dp"
+                        android:visibility="invisible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/mots4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp"
+                                android:text="سَلَامٌ"
+                                android:textAlignment="center"
+                                android:textColor="#fff"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                android:layout_alignBaseline="@+id/cons4"
+                                android:layout_alignBottom="@+id/cons4"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="34dp"
+                                android:layout_marginEnd="34dp" />
+
+                            <TextView
+                                android:id="@+id/cons4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_border_circle"
+                                android:text="س"
+                                android:textColor="#fff"
+                                android:textSize="40sp"
+                                android:layout_marginRight="34dp"
+                                android:layout_marginEnd="34dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toLeftOf="@+id/mots4"
+                                android:layout_toStartOf="@+id/mots4"
+                                android:layout_marginTop="14dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center"
+                        android:layout_below="@+id/quest1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/rim2"
+                            android:layout_toLeftOf="@+id/rim3"
+                            android:layout_toStartOf="@+id/rim3"
+                            android:layout_marginTop="15dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <CheckBox
+                                    android:id="@+id/ch3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_margin="10dp"
+                                    android:gravity="center"
+                                    android:layout_gravity="end"
+                                    android:textColor="#fff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:checked="false"
+                                    android:text="الآخِر"/>
+                                <CheckBox
+                                    android:id="@+id/ch2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_margin="10dp"
+                                    android:gravity="center"
+                                    android:layout_gravity="end"
+                                    android:textColor="#fff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:checked="false"
+                                    android:text="الْوَسَط"/>
+                                <CheckBox
+                                    android:id="@+id/ch1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_margin="10dp"
+                                    android:gravity="center"
+                                    android:layout_gravity="start"
+                                    android:textColor="#fff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:checked="false"
+                                    android:text=" الأَوَّل"
+                                    />
+
+                            </LinearLayout>
+                            <Button
+                                android:id="@+id/setfl"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_menu_send"
+                                android:gravity="center"
+                                android:shadowColor="@color/colorPrimary" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--menu-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:theme="?attr/actionBarTheme"
+            tools:layout_editor_absoluteY="81dp"
+            tools:layout_editor_absoluteX="8dp">
+            <Button
+                android:layout_width="120dp"
+                android:id="@+id/prev"
+                android:layout_height="match_parent"
+                android:background="@drawable/prev"
+                android:layout_gravity="start"/>
+            <Button
+                android:layout_width="50dp"
+                android:id="@+id/menu"
+                android:layout_height="40dp"
+                android:background="@drawable/list"
+                android:layout_gravity="center"/>
+            <Button
+                android:layout_width="120dp"
+                android:id="@+id/next"
+                android:layout_height="match_parent"
+                android:background="@drawable/next"
+                android:layout_gravity="end"/>
+
+        </android.support.design.widget.BottomNavigationView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

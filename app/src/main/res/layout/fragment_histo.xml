@@ -1,0 +1,420 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lnrn.meriem.arabeapplication.CH2.histo"
+    android:background="@drawable/bg">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/histoire"
+                android:visibility="visible">
+
+                <LinearLayout
+
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--Button
+                        android:id="@+id/fullSc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[ ]"
+                        android:textColor="#fff"
+                        android:background="@color/colorAccent"
+                        android:layout_gravity="top|end"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="قِصَّةُ الدََّجَاجَةِ الحَمْرَاءِ"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vidFull"-->
+                <VideoView
+                    android:id="@+id/video_histo"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center_horizontal"/>
+                <!--/RelativeLayout-->
+
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/histo_exo"
+                android:visibility="invisible">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exo1"
+                    android:visibility="visible">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/quest1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/consigne2"
+                        android:gravity="center"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="40dp"
+                        android:text="مَنْ زَرَعَ القَمْحَ؟"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/dog1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:layout_marginTop="15dp"
+                        android:text="الكَلْبُ"
+                        android:textSize="20sp"/>
+
+                    <Button
+                        android:id="@+id/coq1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:layout_marginTop="15dp"
+                        android:text="الدَّجَاجَةُ"
+                        android:textSize="20sp"/>
+                    <Button
+                        android:id="@+id/mouse1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:layout_marginTop="15dp"
+                        android:text="الفَأْرُ"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/exo2">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/quest2"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/consigne"
+                            android:gravity="start"
+                            android:lineSpacingExtra="5dp"
+                            android:padding="40dp"
+                            android:text="هَلْ سَاعَدَ الكَلْبُ وَ القِطُّ وَ الفَأْرُ الدَّجَاجَةَ؟"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:textColor="#fff"
+                            android:layout_marginTop="15dp"
+                            android:text="نَعَمْ"
+                            android:textSize="20sp"/>
+
+                        <Button
+                            android:id="@+id/no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:textColor="#fff"
+                            android:layout_marginTop="15dp"
+                            android:text="لاَ"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/exo3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/quest3"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/consigne2"
+                            android:gravity="center"
+                            android:lineSpacingExtra="5dp"
+                            android:padding="40dp"
+                            android:text="صَوْتُ مَنْ هَذَا؟"
+                            android:textSize="20sp" />
+                        <ImageView
+                            android:id="@+id/son"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="80dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/son" />
+                        <Button
+                            android:id="@+id/cat1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:textColor="#fff"
+                            android:layout_marginTop="15dp"
+                            android:text="القِطُّ"
+                            android:textSize="20sp"/>
+
+                        <Button
+                            android:id="@+id/coq2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:textColor="#fff"
+                            android:layout_marginTop="15dp"
+                            android:text="الدَّجَاجَةُ"
+                            android:textSize="20sp"/>
+                        <Button
+                            android:id="@+id/mouse2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:textColor="#fff"
+                            android:layout_marginTop="15dp"
+                            android:text="الفَأْرُ"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/exo4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/quest4"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/consigne"
+                            android:gravity="center"
+                            android:lineSpacingExtra="5dp"
+                            android:padding="40dp"
+                            android:text="مَنْ فِي الصُّورَةِ؟"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/dog_silhoette"/>
+
+                        <Button
+                            android:id="@+id/coq3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:textColor="#fff"
+                            android:layout_marginTop="15dp"
+                            android:text="الدَّجَاجَةً"
+                            android:textSize="20sp"/>
+                        <Button
+                            android:id="@+id/cat2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:textColor="#fff"
+                            android:layout_marginTop="15dp"
+                            android:text="القِطُّ"
+                            android:textSize="20sp"/>
+                        <Button
+                        android:id="@+id/dog2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:textColor="#fff"
+                        android:layout_marginTop="15dp"
+                        android:text="الكَلْبُ"
+                        android:textSize="20sp"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/histo_rec"
+                android:visibility="invisible">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rec" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="أًُسَجِّلُ قِصَّةَ الدَّجَاجَةِ الحَمْرَاءِ بِصَوْتِي."
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="25dp"/>
+
+
+                    <Button
+                        android:id="@+id/startrec"
+                        android:layout_width="200dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rec_btn" />
+
+                    <!--Button
+                        android:id="@+id/stoprec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="أُوقِفُ التَّسْجِيل" /-->
+
+                    <Button
+                        android:id="@+id/listenrec"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="200dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/rec_listen"/>
+
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+    </RelativeLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/rtr"
+            android:layout_margin="5dp"
+            android:background="@drawable/retour"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--menu-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/rec"
+            android:id="@+id/rec"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="start|center"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/exo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/exo"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/histo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/histo"
+            android:layout_gravity="end|center"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
